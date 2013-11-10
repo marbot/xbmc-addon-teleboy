@@ -63,7 +63,7 @@ def ensure_cookie():
     
     if "Falsche Eingaben" in reply or "Anmeldung war nicht erfolgreich" in reply:
         log( "login failure")
-    log( reply)
+        log( reply)
         notify( "Login Failure!", "Please set your login/password in the addon settings")
         xbmcplugin.endOfDirectory( handle=pluginhandle, succeeded=False)
         return False
